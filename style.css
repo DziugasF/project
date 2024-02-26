@@ -262,6 +262,11 @@ header .custom-class-header {
   color: #647b64;
   font-size: 50px;
 }
+@media (max-width: 650px) {
+  .main-section-two-first-card h2 {
+    font-size: 28px;
+  }
+}
 
 .main-section-two-first-card p {
   width: 60%;
@@ -271,14 +276,13 @@ header .custom-class-header {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  position: relative;
 }
 .first-card-content .orandzine {
-  position: relative;
-  background-image: url(images/orandzine.svg);
-  background-repeat: no-repeat;
-  left: -205px;
-  bottom: -150px;
-  background-size: cover;
+  position: absolute;
+  top: -25px;
+  left: -19px;
+  z-index: -1;
 }
 
 .main-section-two-second-card {
@@ -353,12 +357,10 @@ header .custom-class-header {
     margin: auto;
   }
   .main-section-two .first-card-wrapper .orandzine {
-    position: relative;
-    background-image: url(images/orandzine.svg);
-    background-repeat: no-repeat;
-    left: -32px;
-    bottom: -150px;
-    background-size: cover;
+    position: absolute;
+    top: -25px;
+    left: -149px;
+    z-index: -1;
   }
   .main-section-two .main-section-two-second-card {
     display: flex;
@@ -418,7 +420,6 @@ header .custom-class-header {
 }
 
 .back-ground-imagedots-section-three {
-  width: 200px;
   position: absolute;
   top: 188px;
   left: -59px;
@@ -426,11 +427,15 @@ header .custom-class-header {
 }
 
 .back-ground-imagerectangle-section-three {
-  width: 200px;
   position: absolute;
   top: 261px;
-  right: -134px;
+  right: -1004px;
   z-index: -1;
+}
+@media (max-width: 1050px) {
+  .back-ground-imagerectangle-section-three {
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -443,7 +448,7 @@ header .custom-class-header {
 .main-section-four {
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 250px;
   gap: 300px;
 }
 

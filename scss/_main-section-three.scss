@@ -42,18 +42,19 @@
     }
 }
 .back-ground-imagedots-section-three { 
-    width: 200px;
     position: absolute;
     top: 188px;
     left: -59px;
     z-index: -1;
 }
 .back-ground-imagerectangle-section-three {
-    width: 200px;
     position: absolute;
     top: 261px;
-    right: -134px;    
+    right: -1004px;    
     z-index: -1;
+    @media (max-width:1050px) {
+        display: none;
+    }
 }
 
 .section-three-cards {

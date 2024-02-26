@@ -11,22 +11,24 @@
 .main-section-two-first-card h2 {
     color: #647b64;
     font-size: 50px;
+    @media (max-width:650px) {
+        font-size: 28px;
+    }
 }
 .main-section-two-first-card p {
     width: 60%;
 }
 .first-card-content {
-display: flex;
-flex-direction: column;
-gap: 25px;
-& .orandzine {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     position: relative;
-    background-image: url(images/orandzine.svg);
-    background-repeat: no-repeat;
-    left: -205px;
-    bottom: -150px;
-    background-size: cover;
-}
+ & .orandzine {
+    position: absolute;
+    top: -25px;
+    left: -19px;
+    z-index: -1;
+ }
 }
 .main-section-two-second-card {
 display: grid;
@@ -94,12 +96,10 @@ img {
         .first-card-wrapper {
             margin: auto;
             .orandzine {
-                position: relative;
-                background-image: url(images/orandzine.svg);
-                background-repeat: no-repeat;
-                left: -32px;
-                bottom: -150px;
-                background-size: cover;
+                position: absolute;
+                top: -25px;
+                left: -149px;
+                z-index: -1;
             }
         }
         .main-section-two-second-card {
