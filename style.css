@@ -26,10 +26,17 @@ img {
   border: none;
   border-radius: 3px;
   padding: 20px;
-  width: 55%;
-  min-width: 300px;
+  max-width: 300px;
 }
 
+@media (max-width: 470px) {
+  h1, h2, h3 {
+    font-size: 28px !important;
+  }
+  h3 {
+    text-transform: bold;
+  }
+}
 body {
   font-family: "Avenir", sans-serif;
   font-weight: 400;
@@ -204,9 +211,11 @@ header .custom-class-header {
   position: relative;
   color: hsl(0, 0%, 20%);
   max-width: 530px;
-  background-image: url("/images/Ellipse.svg");
-  background-repeat: no-repeat;
-  background-position: 165px 1px;
+}
+.main-section-title .eclpise-image-one {
+  position: absolute;
+  top: -21px;
+  left: 175px;
 }
 
 .main-section-title h1 {
@@ -221,14 +230,14 @@ header .custom-class-header {
 }
 
 @media (max-width: 1000px) {
-  .main-section-one img {
+  .main-section-one .custom-card-image img {
     display: none;
   }
   .main-section-one .main-section-container {
     margin: auto;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 730px) {
   .main-section-one img {
     display: none;
   }
@@ -357,11 +366,19 @@ header .custom-class-header {
     margin: auto;
   }
   .main-section-two .first-card-wrapper .orandzine {
-    position: absolute;
-    top: -25px;
-    left: -149px;
-    z-index: -1;
+    top: -4px;
+    left: -122px;
+    max-width: none;
   }
+}
+@media (max-width: 1000px) and (max-width: 650px) {
+  .main-section-two .first-card-wrapper .orandzine {
+    top: -34px;
+    left: -292px;
+    max-width: none;
+  }
+}
+@media (max-width: 1000px) {
   .main-section-two .main-section-two-second-card {
     display: flex;
     flex-direction: column;
@@ -426,18 +443,6 @@ header .custom-class-header {
   z-index: -1;
 }
 
-.back-ground-imagerectangle-section-three {
-  position: absolute;
-  top: 261px;
-  right: -1004px;
-  z-index: -1;
-}
-@media (max-width: 1050px) {
-  .back-ground-imagerectangle-section-three {
-    display: none;
-  }
-}
-
 @media (max-width: 1000px) {
   .section-three-cards {
     display: flex;
@@ -487,6 +492,14 @@ header .custom-class-header {
   }
   .main-section-four .section-four-card-wrapper {
     align-items: center;
+  }
+}
+@media (max-width: 750px) {
+  .main-section-four {
+    padding-top: 20px;
+  }
+  .main-section-four img {
+    display: none;
   }
 }
 

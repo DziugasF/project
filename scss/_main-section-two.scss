@@ -96,10 +96,14 @@ img {
         .first-card-wrapper {
             margin: auto;
             .orandzine {
-                position: absolute;
-                top: -25px;
-                left: -149px;
-                z-index: -1;
+                top: -4px;
+                left: -122px;
+                max-width: none;
+                @media (max-width:650px) {
+                    top: -34px;
+                    left: -292px;
+                    max-width: none;
+                }
             }
         }
         .main-section-two-second-card {

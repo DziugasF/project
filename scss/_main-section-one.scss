@@ -18,9 +18,11 @@
         position: relative;
         color: hsl(0, 0%, 20%);
         max-width: 530px;
-        background-image: url('/images/Ellipse.svg');
-        background-repeat: no-repeat;
-        background-position: 165px 1px;
+        .eclpise-image-one {
+            position: absolute;
+            top: -21px;
+            left: 175px;
+        }
     }
     .main-section-title h1 {
         font-size: 58px;
@@ -33,14 +35,14 @@
     }
     .main-section-one {
         @media (max-width:1000px) {
-            img {
+            .custom-card-image img {
                 display: none;
             }
             .main-section-container {
                 margin: auto;
             }
         }
-        @media (max-width:700px) {
+        @media (max-width:730px) {
             img {
                 display: none;
             }

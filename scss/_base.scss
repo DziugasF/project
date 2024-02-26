@@ -23,6 +23,14 @@ img {
     border: none;
     border-radius: 3px;
     padding: 20px;
-    width: 55%;
-    min-width: 300px;
+    max-width: 300px;
+}
+
+@media (max-width:470px) {
+    h1, h2, h3,{
+        font-size: 28px !important;
+    }
+    h3 {
+        text-transform: bold;
+    }
 }
