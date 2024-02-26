@@ -1,0 +1,112 @@
+.main-section-two {
+    display: flex;
+    padding-top: 110px;
+}
+.first-card-wrapper {
+    width: 50%;
+}
+.main-section-two-first-card h3 {
+    color: #f3b562;
+}
+.main-section-two-first-card h2 {
+    color: #647b64;
+    font-size: 50px;
+}
+.main-section-two-first-card p {
+    width: 60%;
+}
+.first-card-content {
+display: flex;
+flex-direction: column;
+gap: 25px;
+& .orandzine {
+    position: relative;
+    background-image: url(images/orandzine.svg);
+    background-repeat: no-repeat;
+    left: -205px;
+    bottom: -150px;
+    background-size: cover;
+}
+}
+.main-section-two-second-card {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 20px;
+width: 50%;
+}
+.main-section-two-second-card-container-one {
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 40px;
+img {
+    background-color: #647b64;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+}
+}
+.main-section-two-second-card-container-two {
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 40px;
+img {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+}
+}
+
+.main-section-two-second-card-container-three {
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 40px;
+img {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+}
+}
+.main-section-two-second-card-container-four {
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 40px;
+img {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+}
+}
+.main-section-two {
+    @media (max-width:1000px) {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        .first-card-wrapper {
+            margin: auto;
+            .orandzine {
+                position: relative;
+                background-image: url(images/orandzine.svg);
+                background-repeat: no-repeat;
+                left: -32px;
+                bottom: -150px;
+                background-size: cover;
+            }
+        }
+        .main-section-two-second-card {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            margin-top: 40px;
+        }
+    }
+}

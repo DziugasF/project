@@ -1,0 +1,28 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.eclpise-image{
+    position: relative;
+    background-repeat: no-repeat;
+    left: -620px;
+    top: 732px;
+}
+img {
+    max-width: 100%;
+    box-sizing: content-box;
+    overflow: clip;
+}
+.btn-custom-green {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-align: start;
+    letter-spacing: 4px;
+    background: linear-gradient(107deg, rgb(100, 123, 100) 0%, rgb(102, 172,    102) 100%);
+    border: none;
+    border-radius: 3px;
+    padding: 20px;
+    width: 55%;
+    min-width: 300px;
+}

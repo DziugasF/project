@@ -1,0 +1,26 @@
+header {
+    .navbar-brand {
+        color: #647B64;
+        font-weight: 500;
+    }
+
+    .btn-green {
+        background: radial-gradient(  #647B64 100%, #0BB1E3 5%, #0E70AF 5%);
+        color: white;
+    }
+    
+    .dropdown-menu {
+        background: radial-gradient(  #647B64 100%, #0BB1E3 5%, #0E70AF 5%);
+        .dropdown-item {
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    .navbar {
+        margin-top: 25px;
+    }
+
+    .custom-class-header {
+        gap: 25px;
+    }
+}

@@ -1,0 +1,64 @@
+.main-section-three {
+    padding-top: 50px;
+}
+.main-section-three-introduction h3 {
+    color: #f3b562;
+}
+.main-section-three-introduction h2 {
+    color: #647b64;
+    font-size: 50px;
+}
+.section-three-cards {
+    display: flex;
+    gap: 50px;
+    padding-top: 50px
+}
+.section-three-card {
+    background-color: white;
+    border-radius: 10px;
+    
+    &:nth-child(2) {
+        background-color: #647b64;
+        color: white;
+    }
+}
+.images-icons {
+    max-width: 50px;
+}
+.section-three-card-wrapper {    
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    & h4 {
+        font-size: 32px;
+    }
+    & p {
+        max-width: 80%;
+        font-size: 16px;
+    }
+}
+.back-ground-imagedots-section-three { 
+    width: 200px;
+    position: absolute;
+    top: 188px;
+    left: -59px;
+    z-index: -1;
+}
+.back-ground-imagerectangle-section-three {
+    width: 200px;
+    position: absolute;
+    top: 261px;
+    right: -134px;    
+    z-index: -1;
+}
+
+.section-three-cards {
+    @media (max-width:1000px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
