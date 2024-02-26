@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width:750px) {
+        display: flex;
+        flex-direction: column;
+    }
 h3 {
     color: #f3b562;
 }
@@ -39,4 +43,12 @@ p {
     margin-top: 20px;
     font-style: italic;
 }
+}
+.buttons-left-right {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .right-slider {
+        margin-top: 22px;
+    }
 }

@@ -508,6 +508,12 @@ header .custom-class-header {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 750px) {
+  .section-five-title-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .section-five-title-wrapper h3 {
   color: #f3b562;
 }
@@ -544,4 +550,13 @@ header .custom-class-header {
 .card p {
   margin-top: 20px;
   font-style: italic;
+}
+
+.buttons-left-right {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.buttons-left-right .right-slider {
+  margin-top: 22px;
 }/*# sourceMappingURL=style.css.map */
